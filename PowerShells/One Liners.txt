@@ -1,6 +1,0 @@
-
-Get account info With SID
-[wmi] "win32_userAccount.Domain='Domain',Name='ct''"
-OR
-Get-WmiObject win32_useraccount -Filter "name = 'user.name' AND domain =
-'Domain'"
