@@ -1,4 +1,8 @@
-# PowerShells
+# powershell
 Misc. powershell scripts used mostly for system administration
-# CMD's
+
+# cmd
 Misc. Windows command prompt commands for system administration
+
+# bash
+Bash scripts used mostly in Linux system administration 
