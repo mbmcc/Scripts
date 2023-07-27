@@ -1,0 +1,18 @@
+<#
+# Registry editing via powershell
+# (created for checking STIGS)
+#>
+
+## Setting a variable for the registry path we want to check
+$regKeyPath = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing'
+## or 
+# load the users .dat file
+reg load HKU\$name C:\Users\$name\ntuser.dat
+# when done unload the .dat file
+#reg unload HKU\$name
+
+## Set a variable with the registry key
+$regKey = Get-ItemProperty $regKeyPath
+
+## display a data value in Hex
+'0x{0:x}' -f $regKey.Status
